@@ -1,0 +1,14 @@
+MY_FILES_CC        	= my_projects/lineup_generator/src/data_model/projection.cc my_projects/lineup_generator/src/data_model/player.cc my_projects/lineup_generator/src/math_model/model.cc my_projects/lineup_generator/src/data/data.cc  my_projects/lineup_generator/src/data/crud.cc
+CC9					= g++-4.9 -std=c++11 -fPIC
+PQXX	= -lpqxx -lpq
+
+
+$(OBJ_DIR)$Slineup_generator.$O: $(EX) $(CVRPTW_DEPS) $(DIMACS_DEPS) $(FAP_DEPS)
+
+$(BIN_DIR)$Slineup_generator$E: $(OR_TOOLS_LIBS) $(CVRPTW_LIBS) $(DIMACS_LIBS) $(FAP_LIBS) \
+	$(OBJ_DIR)$Slineup_generator.$O
+	$(CC9) $(CFLAGS) $(EX) $(MY_FILES_CC) $(PQXX)  $(OR_TOOLS_LNK) $(CVRPTW_LNK) $(DIMACS_LNK) \
+	$(FAP_LNK) $(OR_TOOLS_LD_FLAGS) $(EXE_OUT)$(BIN_DIR)$Slineup_generator$E
+
+
+
