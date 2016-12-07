@@ -1,4 +1,4 @@
-MY_FILES_CC        	= my_projects/lineup_generator/src/data_model/projection.cc my_projects/lineup_generator/src/data_model/player.cc my_projects/lineup_generator/src/math_model/model.cc my_projects/lineup_generator/src/data/data.cc  my_projects/lineup_generator/src/data/crud.cc
+MY_FILES_CC        	= lineup_generator/src/data_model/projection.cc lineup_generator/src/data_model/player.cc lineup_generator/src/math_model/model.cc lineup_generator/src/data/data.cc  lineup_generator/src/data/crud.cc
 CC9					= g++-4.9 -std=c++11 -fPIC
 PQXX	= -lpqxx -lpq
 
