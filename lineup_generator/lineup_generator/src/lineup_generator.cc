@@ -97,7 +97,7 @@ int main (int argc, char** argv) {
 
     if (FLAGS_dbname.compare("") == 0 || FLAGS_user.compare("") == 0 || FLAGS_password.compare("") == 0) {
         cout << "Missing arguments." << endl;
-        cout << "Usage: ./player_optimizer [-num_lineups n] -dbname <db_name> -user <db_user> -password <db_password> [-host db_address] [-port db_port]" << endl;
+        cout << "Usage: ./lineup_generator [-num_lineups n] -dbname <db_name> -user <db_user> -password <db_password> [-host db_address] [-port db_port]" << endl;
         exit(1);
     }
 
