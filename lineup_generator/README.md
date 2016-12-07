@@ -1,7 +1,7 @@
 # Lineup generator
 ## How to install
 
-Lineup generator generates lineups using mathematical integer programming and open-source tools.
+Lineup Generator generates lineups using open-source tools for mathematical integer programming.
 
 ###Install dependencies
 Lineup generator depends on
