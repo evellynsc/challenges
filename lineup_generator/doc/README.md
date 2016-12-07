@@ -39,7 +39,7 @@ This constraint says that at leat one player from <img src="http://mathurl.com/3
 The lineup generator performance was measured in a machine with a Intel Core i5 CPU @ 2.67GHz and 4 GB of memory RAM, using the output of linux command `time`. The real time measured is reported in the graphic below for generating 1, 10, 50, 100, 200, 400 and 800. Notice that the runtime increase exponentially with the number of lineups.
 
 
-<img src="performance2.png" alt="performance" width="800" height="800">
+<img src="performance2.png" alt="performance" width="600" height="600">
 
 
 It is worth to say that the solver used (CBC) doesn't have a good performance in comparison with other solvers, see the graphic below. Probably choose another solver can leverage the performance.
