@@ -1,5 +1,5 @@
 # Lineup generator
-## How to install in Ubuntu based distributions for Linux 
+## How to install in Ubuntu based distributions for Linux
 
 Lineup Generator generates lineups using open-source tools for mathematical integer programming.
 
@@ -11,7 +11,7 @@ Lineup generator depends on
 3. [PostgreSQL][postgresql]: database (version 9.4). For instructions on how to install in linux mint through apt-get see [Installing and Configuring Postgresql on Linux Mint][mint].
 4. GCC compiler version 4.9.
 
-In order to compile and run Lineup Generator successfully, make sure you have all the tools above installed. 
+In order to compile and run Lineup Generator successfully, make sure you have all the tools above installed.
 
 ### Create database
 
@@ -23,7 +23,7 @@ $ ./populate_db
 We assume you have a directory with or-tools already installed and working.
 
 1. After you have installed and tested all dependencies, download and copy this inner `lineup_generator` directory and `Makefile.user` file in the top level of your or-tools directory.
-2. Run the following command from the top level of or-tools directory: 
+2. Run the following command from the top level of or-tools directory:
 
 	``` $ make ccc EX=lineup_generator/src/lineup_generator.cc```
 
@@ -31,12 +31,12 @@ We assume you have a directory with or-tools already installed and working.
 
 	```$ ./bin/lineup_generator```
 
-### Run 
+### Run
 The command to run the tool is:
 ```
 ./bin/lineup_generator [-num_lineups n] -dbname <db_name> -user <db_user> -password <db_password> [-host db_address] [-port db_port]
-``` 
-If no n for -num_lineups is given, then just one lineup is provided. 
+```
+If no *n* for *-num_lineups* is given, then just one lineup is provided. 
 
 [mint]:https://www.codeproject.com/articles/898303/installing-and-configuring-postgresql-on-linux-min. "installing-and-configuring-postgresql"
 [postgresql]: https://www.postgresql.org/ "PostgreSQL"
