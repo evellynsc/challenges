@@ -33,7 +33,7 @@ We assume you are in the top level of your or-tools directory.
 ### Run 
 
 ```
-./bin/lineup_generator [-num_lineups n] -dbname <db_name> -user <db_user> -password <db_password> [-host db_address] [-port db_port]"
+./bin/lineup_generator [-num_lineups n] -dbname <db_name> -user <db_user> -password <db_password> [-host db_address] [-port db_port]
 ``` 
 
 [mint]:https://www.codeproject.com/articles/898303/installing-and-configuring-postgresql-on-linux-min. "installing-and-configuring-postgresql"
