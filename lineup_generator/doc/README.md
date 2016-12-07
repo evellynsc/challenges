@@ -12,11 +12,13 @@ Let's define <img src="http://mathurl.com/zv4xfq9.png" alt="L_k_in_Z"> the neces
 
 The criteria used to evaluate the lineup is the player scores, so the objective function is to maximize the score sum for the nine selected players. The mathematical model that aims to find the best lineup possible is as following.
 
-<img src="http://mathurl.com/gq4rsjf.png" alt="objective"> (0)
+<img src="http://mathurl.com/gq4rsjf.png" alt="objective">
 
 subject to
 
 <img src="http://mathurl.com/jlp6zpl.png" alt="constraints">
+
+The objective function, as said before, is to maximize the score sum of the selected players. Constraints (1), (2) and (3) impose some bounds on salary and ownership of players. Constraints (4), (5) and (6) garantees that players from at least three teams will be selected in one lineup. Constraint (7) prevents that no more than four players from the same team will be selected. Constraint (8) tells how many players according to their positions will be selected. Constraint (9) impose the rule that no other player from the same team of the player in the D position can be selected.
 
 
 
