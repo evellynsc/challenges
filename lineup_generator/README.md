@@ -22,7 +22,7 @@ $ ./populate_db
 ###Download and compile
 We assume you have a directory with or-tools already installed and working.
 
-1. After you have installed and tested all dependencies, download and copy `lineup_generator` directory in the top level of your or-tools directory.
+1. After you have installed and tested all dependencies, download and copy this inner `lineup_generator` directory and `Makefile.user` file in the top level of your or-tools directory.
 2. Run the following command from the top level of or-tools directory: 
 
 	``` $ make ccc EX=lineup_generator/src/lineup_generator.cc```
