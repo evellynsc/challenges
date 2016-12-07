@@ -35,14 +35,13 @@ This constraint implies that at leat one player from <img src="http://mathurl.co
 ## Perfomance
 
 
-
-The lineup generator performance was measured in a machine with a Intel Core i5 CPU @ 2.67GHz and 4 GB of memory RAM, using the output of linux command `time`. The real time measured is reported in the graphic below for generating 1, 10, 50, 100, 200, 400 and 800. Notice that the runtime increase exponentially with the number of lineups.
+The lineup generator performance was measured in a machine with a Intel Core i5 CPU @ 2.67GHz and 4 GB of memory RAM, using the output of linux command `time`. The real time measured is reported in the graphic below for generating 1, 10, 50, 100, 200, 400 and 800 lineups. Notice that (i) the program takes less than 20 minutes to find 400 different lineups and (ii) the runtime increases exponentially with the number of lineups.
 
 
 <img src="performance.png" alt="performance" width="600" height="600">
 
 
-It is worth to say that the solver used (CBC) doesn't have a good performance in comparison with other solvers, see the graphic below. Probably choose another solver can leverage the performance.
+It is worth it to mentioned that Google or-tools standart solver is CBC, and consequently is the one used here. It is possible, however, to use a different solver and probably leverage performance. The graphic below shows a performance comparison among several available solvers.
 
 <img src="http://scip.zib.de/images/2016_06_13.png" alt="invalidate_solution">
 
