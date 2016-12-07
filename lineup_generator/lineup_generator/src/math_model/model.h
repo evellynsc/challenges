@@ -4,7 +4,7 @@
 #include "base/logging.h"
 #include "linear_solver/linear_solver.h"
 
-#include "../data/data.h"
+#include "../data_model/data.h"
 
 #include <iostream>
 #include <string>

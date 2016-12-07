@@ -1,4 +1,4 @@
-MY_FILES_CC        	= lineup_generator/src/data_model/projection.cc lineup_generator/src/data_model/player.cc lineup_generator/src/math_model/model.cc lineup_generator/src/data/data.cc  lineup_generator/src/data/crud.cc
+MY_FILES_CC        	= lineup_generator/src/data_model/projection.cc lineup_generator/src/data_model/player.cc lineup_generator/src/math_model/model.cc lineup_generator/src/data_model/data.cc  lineup_generator/src/database/crud.cc
 CC9					= g++-4.9 -std=c++11 -fPIC
 PQXX	= -lpqxx -lpq
 
@@ -9,6 +9,3 @@ $(BIN_DIR)$Slineup_generator$E: $(OR_TOOLS_LIBS) $(CVRPTW_LIBS) $(DIMACS_LIBS) $
 	$(OBJ_DIR)$Slineup_generator.$O
 	$(CC9) $(CFLAGS) $(EX) $(MY_FILES_CC) $(PQXX)  $(OR_TOOLS_LNK) $(CVRPTW_LNK) $(DIMACS_LNK) \
 	$(FAP_LNK) $(OR_TOOLS_LD_FLAGS) $(EXE_OUT)$(BIN_DIR)$Slineup_generator$E
-
-
-
