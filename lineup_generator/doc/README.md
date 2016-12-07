@@ -41,7 +41,7 @@ The lineup generator performance was measured in a machine with a Intel Core i5 
 <img src="performance.png" alt="performance" width="600" height="600">
 
 
-It is worth it to mentioned that Google or-tools standart solver is CBC, and consequently is the one used here. It is possible, however, to use a different solver and probably leverage performance. The graphic below shows a performance comparison among several available solvers.
+It is worth it to mentioned that Google or-tools standard solver is CBC, and consequently is the one used here. It is possible, however, to use a different solver and probably leverage performance. The graphic below shows a performance comparison among several available solvers.
 
 <img src="http://scip.zib.de/images/2016_06_13.png" alt="invalidate_solution">
 
