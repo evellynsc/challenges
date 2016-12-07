@@ -36,7 +36,7 @@ This constraint says that at leat one player from <img src="http://mathurl.com/3
 
 The lineup generator performance was measured using the output of linux command `time`. The real time measured is reported in the graphic below for generating 1, 10, 50, 100, 200, 400 and 800. Notice that the runtime increase exponentially with the number of lineups.
 
-<img src="performance.png" alt="performance" style="width:45px;height:45px;">
+<img src="performance.png" alt="performance" style="max-width:50%;">
 
 It is worth to say that the solver used (CBC) doesn't have a good performance in comparison with other solvers, see the graphic below. Probably choose another solver can leverage the performance.
 
