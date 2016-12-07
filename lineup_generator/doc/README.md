@@ -10,13 +10,13 @@ Let's associate for each player <img src="http://mathurl.com/gsbq25f.png" alt="i
 Let's also associate for each team <img src="http://mathurl.com/hr89jym.png" alt="j_in_T"> a binary variable <img src="http://mathurl.com/oujkp62.png" alt="z_j">, that assumes value 1 if at least one player <img src="http://mathurl.com/5ldlsl.png" alt="i"> of team <img src="http://mathurl.com/6u2lg2j.png" alt="j"> is choose for the lineup and 0, otherwise. This is a very important variable to impose some mandatory constraints to the problem.
 Let's define <img src="http://mathurl.com/zv4xfq9.png" alt="L_k_in_Z"> the necessary number of players for position <img src="http://mathurl.com/zdzqyah.png" alt="k_in_P"> in a valid lineup.
 
-The criteria used to evaluate the lineup is the player scores, so the objective function is to maximize the score sum for the nine players selected. The mathematical model that aims to find the best lineup possible is as following.
+The criteria used to evaluate the lineup is the player scores, so the objective function is to maximize the score sum for the nine selected players. The mathematical model that aims to find the best lineup possible is as following.
 
-<img src="http://mathurl.com/gq4rsjf.png" alt="objective">
+<img src="http://mathurl.com/gq4rsjf.png" alt="objective"> (0)
 
 subject to
 
-<img src="http://mathurl.com/hhho4xo.png" alt="constraints">
+<img src="http://mathurl.com/jlp6zpl.png" alt="constraints">
 
 
 
