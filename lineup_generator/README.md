@@ -29,7 +29,8 @@ We assume you are in the top level of your or-tools directory.
 	``` $ make ccc EX=lineup_generator/src/lineup_generator.cc```
 
 4. You should have a `bin/lineup_generator` binary if compilation is successfully. Finally run lineup generator and you will get an error of missing arguments.
-```$ ./bin/lineup_generator```
+
+	```$ ./bin/lineup_generator```
 
 ### Run 
 
