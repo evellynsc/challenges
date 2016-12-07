@@ -3,9 +3,11 @@
 
 
 
-Lineup Generator goal is to choose a subset of nine players in order to respect some constraints and guarantee the best combination according with some criteria.
+Lineup Generator goal is to choose a subset of nine players <img src="http://mathurl.com/gsbq25f.png" alt="playerset"> in order to respect some constraints and guarantee the best combination according with some criteria.
 
 <img src="http://mathurl.com/gq4rsjf.png" alt="objective">
+
+
 
 <img src="http://mathurl.com/hhho4xo.png" alt="constraints">
 
