@@ -30,9 +30,11 @@ After finding <img src="http://mathurl.com/32b5w4t.png" alt="invalidate_solution
 
 <img src="http://mathurl.com/z29ycr2.png" alt="invalidate_solution">
 
-This constraint says that at leat one player from <img src="http://mathurl.com/32b5w4t.png" alt="invalidate_solution"> has to be different.
+This constraint says that at leat one player from <img src="http://mathurl.com/32b5w4t.png" alt="invalidate_solution"> has to be different. So everytime the best lineup is found, we add the constraint of that lineup and solve the model again. We do this until we have a suficient number of  lineups.
 
-So everytime the best lineup is found, we add the constraint of that lineup and solve the model again. We do this until we have a suficient number of  lineups.
+## How is the perfomance
+
+
 
 
 
