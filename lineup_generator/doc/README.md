@@ -1,15 +1,40 @@
 # Report
 ## How Lineup Generator works
 
+Lineup Generator goal is to choose a subset of nine players in a set of players *A* in order to respect some constraints and guarantee the best combination according to some criteria. Because we are interested in finding the best solution from all feasible solutions, a natural way of looking to this problem is as an [optimization problem][optimization].
 
+So it is possible to write the problem as a mathematical model and try to solve it using [mathematical integer program][ip] and very well consolidated tools/algorithms for optimization.
 
-Lineup Generator goal is to choose a subset of nine players <img src="http://mathurl.com/gsbq25f.png" alt="playerset"> in order to respect some constraints and guarantee the best combination according with some criteria.
+Before presenting the model, let's introduce some notation.
+Consider A the set of players, T the set of teams and P the set of possible positions a player can assume. Each player *i* has some caracteristics like team, position, salary, ownership, score and so on.
+Let's associate for each player i \in A a binary variable x_i, that assumes value 1 if player *i* is choose for the lineup and 0, otherwise.
+Let's also associate for each team j \in T a binary variable z_j, that assumes value 1 if at least one player *i* of team *j* is choose for the lineup and 0, otherwise. This variable is very important to impose some mandatory constraints to the problem.
+Let's define L_k the necessary number of players for position k \in P in a valid lineup.
+The criteria used to evaluate the lineup is the player scores, so the objective function is to maximize the score sum for the nine players selected.
+
+The mathematical model that aims to find the best lineup possible is as following.
 
 <img src="http://mathurl.com/gq4rsjf.png" alt="objective">
 
-
+Subject to
 
 <img src="http://mathurl.com/hhho4xo.png" alt="constraints">
+
+
+
+
+[ip]: https://en.wikipedia.org/wiki/Integer_programming "Integer Programming"
+[optimization]: https://en.wikipedia.org/wiki/Optimization_problem "Optimization Problem"
+
+
+
+<img src="http://mathurl.com/gsbq25f.png" alt="playerset">
+
+
+
+
+
+
 
 
 ###Install dependencies
