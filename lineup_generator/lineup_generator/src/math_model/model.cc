@@ -175,7 +175,7 @@ void Model::createModel ()
 
 void Model::optimize ()
 {
-    cout << "searching solution..." << endl;
+   // cout << "searching solution..." << endl;
     // this->solver_->EnableOutput();
     // cout << this->solver_->SolverVersion() << endl;
 
