@@ -1,5 +1,5 @@
 # Report
-## How Lineup Generator works
+## How to find the best lineup
 
 Lineup Generator goal is to choose a subset of nine players in a set of players in order to respect some constraints and guarantee the best combination according some criteria. Because we are interested in finding the best solution from all feasible solutions, a natural way of looking to this problem is as an [optimization problem][optimization]. So it is possible to write the problem as a mathematical model and try to solve it using [mathematical integer program][ip] and very well consolidated tools/algorithms for optimization.
 
@@ -19,6 +19,18 @@ subject to
 <img src="http://mathurl.com/jlp6zpl.png" alt="constraints">
 
 The objective function, as said before, is to maximize the score sum of the selected players. Constraints (1), (2) and (3) impose some bounds on salary and ownership of players. Constraints (4), (5) and (6) garantees that players from at least three teams will be selected in one lineup. Constraint (7) prevents that no more than four players from the same team will be selected. Constraint (8) tells how many players according to their positions will be selected. Constraint (9) impose the rule that no other player from the same team of the player in the D position can be selected.
+
+
+## How to generate many lineups
+
+The section above presented a mathematical model to find the best possible lineup. However we are interested in generating many lineups 'a little' less valuable than the best that still feasible. We can achieve this in an interative manner, using the same model and adding new constraints as following.
+
+Let S be the set of players of the best lineup given by the model above.
+After finding S, we add a new constraint to the model that turns S into a invalid lineup. We can achieve this with the constraint below.
+
+<img src="http://mathurl.com/z29ycr2.png" alt="invalidate_solution">
+
+
 
 
 
