@@ -38,7 +38,7 @@ This constraint says that at leat one player from <img src="http://mathurl.com/3
 
 The lineup generator performance was measured in a machine with a Intel Core i5 CPU @ 2.67GHz and 4 GB of memory RAM, using the output of linux command `time`. The real time measured is reported in the graphic below for generating 1, 10, 50, 100, 200, 400 and 800. Notice that the runtime increase exponentially with the number of lineups.
 
-<div style="width:100px;height:100px;">
+<div style="width:300px;height:300px;">
 <img src="performance2.png" alt="performance">
 <div>
 
