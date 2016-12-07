@@ -1,5 +1,5 @@
 # Report
-## How to find the best lineup
+## Find the best lineup
 
 Lineup Generator goal is to choose a subset of nine players in a set of players in order to respect some constraints and guarantee the best combination according some criteria. Because we are interested in finding the best solution from all feasible solutions, a natural way of looking to this problem is as an [optimization problem][optimization]. So it is possible to write the problem as a mathematical model and try to solve it using [mathematical integer program][ip] and very well consolidated tools/algorithms for optimization.
 
@@ -21,7 +21,7 @@ subject to
 The objective function, as said before, is to maximize the score sum of the selected players. Constraints (1), (2) and (3) impose some bounds on salary and ownership of players. Constraints (4), (5) and (6) garantees that players from at least three teams will be selected in one lineup. Constraint (7) prevents that no more than four players from the same team will be selected. Constraint (8) tells how many players according to their positions will be selected. Constraint (9) impose the rule that no other player from the same team of the player in the D position can be selected.
 
 
-## How to generate many lineups
+## Generate many lineups
 
 The section above presented a mathematical model to find the best possible lineup. However we are interested in generating many lineups 'a little' less valuable than the best that still feasible. We can achieve this in an interative manner, using the same model and adding new constraints as following.
 
@@ -32,10 +32,15 @@ After finding <img src="http://mathurl.com/32b5w4t.png" alt="invalidate_solution
 
 This constraint says that at leat one player from <img src="http://mathurl.com/32b5w4t.png" alt="invalidate_solution"> has to be different. So everytime the best lineup is found, we add the constraint of that lineup and solve the model again. We do this until we have a suficient number of  lineups.
 
-## How is the perfomance
+## Perfomance
 
+The lineup generator performance was measured using the output of linux command `time`. The real time measured is reported in the graphic below for generating 1, 10, 50, 100, 200, 400 and 800. Notice that the runtime increase exponentially with the number of lineups.
 
+<img src="performance.png" alt="performance">
 
+It is worth to say that the solver used (CBC) doesn't have a good performance in comparison with other solvers, see the graphic below. Probably choose another solver can leverage the performance.
+
+<img src="http://scip.zib.de/images/2016_06_13.png" alt="invalidate_solution">
 
 
 
