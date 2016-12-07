@@ -6,7 +6,7 @@ Lineup generator generates lineups using mathematical integer programming and op
 ###Install dependencies
 Lineup generator depends on
 
-1. [Google Optimization Tools (or-tools)][ortools]: Google software suite for combinatorial optimization, which gives a C++ API to implement and solve mathematical models through [CBC][cbc]. Development is based on the binary distribution for [Ubuntu 14.04][ubuntu] .
+1. [Google Optimization Tools (or-tools)][ortools]: Google software suite for combinatorial optimization, which gives a C++ API to implement and solve mathematical models through [CBC][cbc]. Development is based on the [binary distribution][ubuntu] for Ubuntu 14.04.
 2. [libpqxx][pqxx]: the official C++ client API for ​PostgreSQL, version 4.0, installed via apt-get. Make sure you have libpqxx-4.0 and libpqxx-dev installed.
 3. [PostgreSQL][postgresql] database version 9.4. For instructions on how to install in linux mint via apt-get see [Installing and Configuring Postgresql on Linux Mint][mint].
 4. GCC compiler version 4.9.
