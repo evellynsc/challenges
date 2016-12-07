@@ -23,7 +23,7 @@ The objective function, as said before, is to maximize the score sum of the sele
 
 ## Generate many lineups
 
-The section above presented a mathematical model to find the best possible lineup. However we are interested in generating many lineups 'a little' less valuable than the best that still feasible. We can achieve this in an interative manner, using the same model and adding new constraints as following.
+The section above presented a mathematical model to find the best possible lineup. However we are interested in generating many feasible lineups 'a little' less valuable than the best. We can achieve this through an interative manner, using the same model and adding new constraints as following.
 
 Let <img src="http://mathurl.com/32b5w4t.png" alt="invalidate_solution"> be the set of players of the best lineup given by the model above.
 After finding <img src="http://mathurl.com/32b5w4t.png" alt="invalidate_solution">, we add a new constraint to the model that turns <img src="http://mathurl.com/32b5w4t.png" alt="invalidate_solution"> into a invalid lineup. We can achieve this by the constraint below.
