@@ -1,7 +1,12 @@
-# Lineup generator
-## How to install in Ubuntu based distributions for Linux
+# Report
+## How Lineup Generator works
 
-Lineup Generator generates lineups using open-source tools for mathematical integer programming.
+
+
+Lineup Generator goal is to choose a subset of nine players $\in$ P in order to respect some constraints and guarantee the best combination according with some criteria.
+
+
+<img src="http://mathurl.com/hhho4xo.png" alt="constraints" style="width:304px;height:228px;">
 
 ###Install dependencies
 Lineup generator depends on
